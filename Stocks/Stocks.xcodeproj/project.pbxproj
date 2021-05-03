@@ -21,6 +21,8 @@
 		92A789BC2640796D00B9539C /* Cuckoo in Frameworks */ = {isa = PBXBuildFile; productRef = 92A789BB2640796D00B9539C /* Cuckoo */; };
 		92A789C126407DF800B9539C /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789C026407DF800B9539C /* GeneratedMocks.swift */; };
 		92CC805F264091A900D19219 /* stocks.json in Resources */ = {isa = PBXBuildFile; fileRef = 92DDE42226408CCA00E903CB /* stocks.json */; };
+		92CC80652640A41900D19219 /* ErrorLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC80642640A41900D19219 /* ErrorLogging.swift */; };
+		92CC80672640A48B00D19219 /* ErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC80662640A48B00D19219 /* ErrorLogger.swift */; };
 		92DDE41B2640892400E903CB /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDE41A2640892400E903CB /* StockModel.swift */; };
 		92DDE41D26408B9800E903CB /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDE41C26408B9800E903CB /* Currency.swift */; };
 		92DDE41F26408C3000E903CB /* StocksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDE41E26408C3000E903CB /* StocksModel.swift */; };
@@ -59,6 +61,8 @@
 		92A789972640600200B9539C /* StocksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A789B32640760600B9539C /* StocksModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StocksModelSpec.swift; sourceTree = "<group>"; };
 		92A789C026407DF800B9539C /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		92CC80642640A41900D19219 /* ErrorLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogging.swift; sourceTree = "<group>"; };
+		92CC80662640A48B00D19219 /* ErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogger.swift; sourceTree = "<group>"; };
 		92DDE41A2640892400E903CB /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		92DDE41C26408B9800E903CB /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		92DDE41E26408C3000E903CB /* StocksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StocksModel.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 		92A789782640600100B9539C /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				92CC80632640A3F100D19219 /* Helper */,
 				92DDE4192640876400E903CB /* Model */,
 				92A789792640600100B9539C /* AppDelegate.swift */,
 				92A7897B2640600100B9539C /* SceneDelegate.swift */,
@@ -148,6 +153,15 @@
 				92A789C026407DF800B9539C /* GeneratedMocks.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		92CC80632640A3F100D19219 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				92CC80642640A41900D19219 /* ErrorLogging.swift */,
+				92CC80662640A48B00D19219 /* ErrorLogger.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		92DDE4192640876400E903CB /* Model */ = {
@@ -341,8 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CC80672640A48B00D19219 /* ErrorLogger.swift in Sources */,
 				92DDE41B2640892400E903CB /* StockModel.swift in Sources */,
 				92DDE41D26408B9800E903CB /* Currency.swift in Sources */,
+				92CC80652640A41900D19219 /* ErrorLogging.swift in Sources */,
 				92A7897E2640600100B9539C /* ViewController.swift in Sources */,
 				92A7897A2640600100B9539C /* AppDelegate.swift in Sources */,
 				92DDE41F26408C3000E903CB /* StocksModel.swift in Sources */,
