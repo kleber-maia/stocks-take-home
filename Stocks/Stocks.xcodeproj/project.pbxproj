@@ -13,10 +13,13 @@
 		92A789812640600100B9539C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A7897F2640600100B9539C /* Main.storyboard */; };
 		92A789832640600200B9539C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A789822640600200B9539C /* Assets.xcassets */; };
 		92A789862640600200B9539C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A789842640600200B9539C /* LaunchScreen.storyboard */; };
-		92A789912640600200B9539C /* StocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789902640600200B9539C /* StocksTests.swift */; };
-		92A7899C2640600200B9539C /* StocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7899B2640600200B9539C /* StocksUITests.swift */; };
 		92A789AC2640749500B9539C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 92A789AB2640749500B9539C /* Realm */; };
 		92A789AE2640749500B9539C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 92A789AD2640749500B9539C /* RealmSwift */; };
+		92A789B2264075E200B9539C /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 92A789B1264075E200B9539C /* Nimble */; };
+		92A789B42640760600B9539C /* StocksSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789B32640760600B9539C /* StocksSpec.swift */; };
+		92A789B7264076FE00B9539C /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 92A789B6264076FE00B9539C /* Quick */; };
+		92A789BC2640796D00B9539C /* Cuckoo in Frameworks */ = {isa = PBXBuildFile; productRef = 92A789BB2640796D00B9539C /* Cuckoo */; };
+		92A789C126407DF800B9539C /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789C026407DF800B9539C /* GeneratedMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +49,10 @@
 		92A789852640600200B9539C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92A789872640600200B9539C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92A7898C2640600200B9539C /* StocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92A789902640600200B9539C /* StocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTests.swift; sourceTree = "<group>"; };
 		92A789922640600200B9539C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92A789972640600200B9539C /* StocksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92A7899B2640600200B9539C /* StocksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksUITests.swift; sourceTree = "<group>"; };
-		92A7899D2640600200B9539C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A789B32640760600B9539C /* StocksSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StocksSpec.swift; sourceTree = "<group>"; };
+		92A789C026407DF800B9539C /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A789B7264076FE00B9539C /* Quick in Frameworks */,
+				92A789B2264075E200B9539C /* Nimble in Frameworks */,
+				92A789BC2640796D00B9539C /* Cuckoo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +90,6 @@
 			children = (
 				92A789782640600100B9539C /* Stocks */,
 				92A7898F2640600200B9539C /* StocksTests */,
-				92A7899A2640600200B9539C /* StocksUITests */,
 				92A789772640600100B9539C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,19 +121,19 @@
 		92A7898F2640600200B9539C /* StocksTests */ = {
 			isa = PBXGroup;
 			children = (
-				92A789902640600200B9539C /* StocksTests.swift */,
+				92A789C226407E3B00B9539C /* Mocks */,
+				92A789B32640760600B9539C /* StocksSpec.swift */,
 				92A789922640600200B9539C /* Info.plist */,
 			);
 			path = StocksTests;
 			sourceTree = "<group>";
 		};
-		92A7899A2640600200B9539C /* StocksUITests */ = {
+		92A789C226407E3B00B9539C /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				92A7899B2640600200B9539C /* StocksUITests.swift */,
-				92A7899D2640600200B9539C /* Info.plist */,
+				92A789C026407DF800B9539C /* GeneratedMocks.swift */,
 			);
-			path = StocksUITests;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92A789A32640600200B9539C /* Build configuration list for PBXNativeTarget "StocksTests" */;
 			buildPhases = (
+				92DDE4182640853E00E903CB /* Cuckoo Run Script */,
 				92A789882640600200B9539C /* Sources */,
 				92A789892640600200B9539C /* Frameworks */,
 				92A7898A2640600200B9539C /* Resources */,
@@ -170,6 +175,11 @@
 				92A7898E2640600200B9539C /* PBXTargetDependency */,
 			);
 			name = StocksTests;
+			packageProductDependencies = (
+				92A789B1264075E200B9539C /* Nimble */,
+				92A789B6264076FE00B9539C /* Quick */,
+				92A789BB2640796D00B9539C /* Cuckoo */,
+			);
 			productName = StocksTests;
 			productReference = 92A7898C2640600200B9539C /* StocksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -210,6 +220,7 @@
 					};
 					92A789962640600200B9539C = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 						TestTargetID = 92A789752640600100B9539C;
 					};
 				};
@@ -225,6 +236,9 @@
 			mainGroup = 92A7896D2640600100B9539C;
 			packageReferences = (
 				92A789AA2640749500B9539C /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				92A789B0264075E200B9539C /* XCRemoteSwiftPackageReference "Nimble" */,
+				92A789B5264076FE00B9539C /* XCRemoteSwiftPackageReference "Quick" */,
+				92A789BA2640796D00B9539C /* XCRemoteSwiftPackageReference "Cuckoo" */,
 			);
 			productRefGroup = 92A789772640600100B9539C /* Products */;
 			projectDirPath = "";
@@ -264,6 +278,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92DDE4182640853E00E903CB /* Cuckoo Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Cuckoo Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PROJECT_DIR}/run\" --download generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/MyProtocol.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92A789722640600100B9539C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -279,7 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A789912640600200B9539C /* StocksTests.swift in Sources */,
+				92A789C126407DF800B9539C /* GeneratedMocks.swift in Sources */,
+				92A789B42640760600B9539C /* StocksSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A7899C2640600200B9539C /* StocksUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MFR55Y483L;
 				INFOPLIST_FILE = StocksUITests/Info.plist;
@@ -540,6 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.klebermaia.StocksUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Stocks;
@@ -550,6 +587,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MFR55Y483L;
 				INFOPLIST_FILE = StocksUITests/Info.plist;
@@ -616,6 +654,30 @@
 				minimumVersion = 4.4.1;
 			};
 		};
+		92A789B0264075E200B9539C /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.1;
+			};
+		};
+		92A789B5264076FE00B9539C /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+		92A789BA2640796D00B9539C /* XCRemoteSwiftPackageReference "Cuckoo" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Brightify/Cuckoo.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -628,6 +690,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 92A789AA2640749500B9539C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
+		};
+		92A789B1264075E200B9539C /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92A789B0264075E200B9539C /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		92A789B6264076FE00B9539C /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92A789B5264076FE00B9539C /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		92A789BB2640796D00B9539C /* Cuckoo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92A789BA2640796D00B9539C /* XCRemoteSwiftPackageReference "Cuckoo" */;
+			productName = Cuckoo;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
