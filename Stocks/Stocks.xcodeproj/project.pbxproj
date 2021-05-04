@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		92410B452640BAC9009510C7 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 92410B442640BAC9009510C7 /* OHHTTPStubs */; };
 		92410B472640BAC9009510C7 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 92410B462640BAC9009510C7 /* OHHTTPStubsSwift */; };
+		9267FE232641C81C0061A823 /* ExtendedFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FE222641C81C0061A823 /* ExtendedFormatter.swift */; };
+		9267FE252641CF580061A823 /* ExtendedFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FE242641CF580061A823 /* ExtendedFormatterSpec.swift */; };
 		92A7897A2640600100B9539C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789792640600100B9539C /* AppDelegate.swift */; };
 		92A7897C2640600100B9539C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7897B2640600100B9539C /* SceneDelegate.swift */; };
 		92A7897E2640600100B9539C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7897D2640600100B9539C /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9267FE222641C81C0061A823 /* ExtendedFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedFormatter.swift; sourceTree = "<group>"; };
+		9267FE242641CF580061A823 /* ExtendedFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedFormatterSpec.swift; sourceTree = "<group>"; };
 		92A789762640600100B9539C /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A789792640600100B9539C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A7897B2640600100B9539C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 			children = (
 				92DDE42026408C7600E903CB /* Fixtures */,
 				92A789C226407E3B00B9539C /* Mocks */,
+				9267FE242641CF580061A823 /* ExtendedFormatterSpec.swift */,
 				92CC806D2640B7F200D19219 /* PortfolioServiceSpec.swift */,
 				92A789B32640760600B9539C /* PortfolioModelSpec.swift */,
 				92A789922640600200B9539C /* Info.plist */,
@@ -178,6 +183,7 @@
 			children = (
 				92CC80642640A41900D19219 /* ErrorLogging.swift */,
 				92CC80662640A48B00D19219 /* ErrorLogger.swift */,
+				9267FE222641C81C0061A823 /* ExtendedFormatter.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 				92A7897E2640600100B9539C /* ViewController.swift in Sources */,
 				92CC80622640A23C00D19219 /* PortfolioService.swift in Sources */,
 				92A7897A2640600100B9539C /* AppDelegate.swift in Sources */,
+				9267FE232641C81C0061A823 /* ExtendedFormatter.swift in Sources */,
 				92DDE41F26408C3000E903CB /* PortfolioModel.swift in Sources */,
 				92A7897C2640600100B9539C /* SceneDelegate.swift in Sources */,
 			);
@@ -393,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92CC806E2640B7F200D19219 /* PortfolioServiceSpec.swift in Sources */,
+				9267FE252641CF580061A823 /* ExtendedFormatterSpec.swift in Sources */,
 				92EB3A9226418C5D003A0E4C /* GeneratedMocks.swift in Sources */,
 				92A789B42640760600B9539C /* PortfolioModelSpec.swift in Sources */,
 			);
