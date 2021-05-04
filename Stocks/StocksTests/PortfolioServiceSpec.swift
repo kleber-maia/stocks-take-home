@@ -63,6 +63,35 @@ class PortfolioServiceSpec: QuickSpec {
                 }
             }
 
+            context("when there's a local connection error") {
+                it("should return and log a non fatal error") {
+                    stub(condition: isHost("storage.googleapis.com")) { _ in
+                        .init(error: NSError(domain: NSURLErrorDomain, code: URLError.notConnectedToInternet.rawValue))
+                    }
+
+                    let mock = MockErrorLogging()
+                    stub(mock) { stub in
+                        stub.logNonFatal(error: any()).thenDoNothing()
+                    }
+
+                    let service = PortfolioService()
+                    service.errorLogger = mock
+
+                    waitUntil(timeout: .milliseconds(500)) { done in
+                        service.fetch { result in
+                            do {
+                                let expected = PortfolioService.ServiceError.requestError(nil)
+                                expect(try result.get()).to(throwError(expected))
+
+                                verify(mock).logNonFatal(error: any())
+
+                                done()
+                            } catch { /* XXX: ignore Xcode warning */ }
+                        }
+                    }
+                }
+            }
+
             context("when invalid data is returned") {
                 it("should return and log a non fatal error") {
                     stub(condition: isHost("storage.googleapis.com")) { _ in
