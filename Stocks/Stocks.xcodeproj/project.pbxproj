@@ -21,7 +21,6 @@
 		92A789B42640760600B9539C /* PortfolioModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789B32640760600B9539C /* PortfolioModelSpec.swift */; };
 		92A789B7264076FE00B9539C /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 92A789B6264076FE00B9539C /* Quick */; };
 		92A789BC2640796D00B9539C /* Cuckoo in Frameworks */ = {isa = PBXBuildFile; productRef = 92A789BB2640796D00B9539C /* Cuckoo */; };
-		92A789C126407DF800B9539C /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789C026407DF800B9539C /* GeneratedMocks.swift */; };
 		92CC805F264091A900D19219 /* stocks.json in Resources */ = {isa = PBXBuildFile; fileRef = 92DDE42226408CCA00E903CB /* stocks.json */; };
 		92CC80622640A23C00D19219 /* PortfolioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC80612640A23C00D19219 /* PortfolioService.swift */; };
 		92CC80652640A41900D19219 /* ErrorLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC80642640A41900D19219 /* ErrorLogging.swift */; };
@@ -32,6 +31,7 @@
 		92DDE41F26408C3000E903CB /* PortfolioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDE41E26408C3000E903CB /* PortfolioModel.swift */; };
 		92DDE42426408D2C00E903CB /* stocks_malformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 92DDE42326408D2C00E903CB /* stocks_malformed.json */; };
 		92DDE42626408D4800E903CB /* stocks_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 92DDE42526408D4800E903CB /* stocks_empty.json */; };
+		92EB3A9226418C5D003A0E4C /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 		92A789922640600200B9539C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92A789972640600200B9539C /* StocksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A789B32640760600B9539C /* PortfolioModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioModelSpec.swift; sourceTree = "<group>"; };
-		92A789C026407DF800B9539C /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		92CC80612640A23C00D19219 /* PortfolioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioService.swift; sourceTree = "<group>"; };
 		92CC80642640A41900D19219 /* ErrorLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogging.swift; sourceTree = "<group>"; };
 		92CC80662640A48B00D19219 /* ErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogger.swift; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		92DDE42226408CCA00E903CB /* stocks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stocks.json; sourceTree = "<group>"; };
 		92DDE42326408D2C00E903CB /* stocks_malformed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stocks_malformed.json; sourceTree = "<group>"; };
 		92DDE42526408D4800E903CB /* stocks_empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stocks_empty.json; sourceTree = "<group>"; };
+		92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneratedMocks.swift; path = StocksTests/GeneratedMocks.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +160,7 @@
 		92A789C226407E3B00B9539C /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				92A789C026407DF800B9539C /* GeneratedMocks.swift */,
+				92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -367,7 +367,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PROJECT_DIR}/run\" --download generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/MyProtocol.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PROJECT_DIR}/run\" --download generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Helper/ErrorLogging.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -392,8 +392,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A789C126407DF800B9539C /* GeneratedMocks.swift in Sources */,
 				92CC806E2640B7F200D19219 /* PortfolioServiceSpec.swift in Sources */,
+				92EB3A9226418C5D003A0E4C /* GeneratedMocks.swift in Sources */,
 				92A789B42640760600B9539C /* PortfolioModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

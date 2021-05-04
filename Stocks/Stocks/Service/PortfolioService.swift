@@ -16,6 +16,7 @@ class PortfolioService {
 
     /// Fetches user's stocks portfolio and invokes `completion` passing either a failure with an error or a
     /// list of stocks.
+    /// In case of an error, a non fatal error will be logged.
     func fetch(completion: @escaping Completion) {
         guard let url = URL(string: fetchUrl) else {
             completion(.failure(ServiceError.invalidUrl))
@@ -45,6 +46,7 @@ class PortfolioService {
                 let model = try PortfolioModel(jsonData: data ?? Data())
                 completion(.success(model))
             } catch {
+                self?.errorLogger.logNonFatal(error: error)
                 completion(.failure(ServiceError.invalidData(data)))
             }
         }.resume()

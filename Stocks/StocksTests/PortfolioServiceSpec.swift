@@ -1,3 +1,4 @@
+import Cuckoo
 import Foundation
 import OHHTTPStubs
 import OHHTTPStubsSwift
@@ -34,44 +35,58 @@ class PortfolioServiceSpec: QuickSpec {
             }
 
             context("when there's a server error") {
-                it("should return an error") {
+                it("should return and log an HTTP error") {
                     stub(condition: isHost("storage.googleapis.com")) { _ in
                         .init(data: Data(), statusCode: 500, headers: nil)
                     }
 
+                    let mock = MockErrorLogging()
+                    stub(mock) { stub in
+                        stub.logHTTP(error: any(), request: any(), response: any()).thenDoNothing()
+                    }
+
                     let service = PortfolioService()
+                    service.errorLogger = mock
 
                     waitUntil(timeout: .milliseconds(500)) { done in
                         service.fetch { result in
                             do {
                                 let expected = PortfolioService.ServiceError.requestError(nil)
                                 expect(try result.get()).to(throwError(expected))
+
+                                verify(mock).logHTTP(error: any(), request: any(), response: any())
+
                                 done()
-                            } catch {
-                                // XXX: ignore Xcode warning
-                            }
+                            } catch { /* XXX: ignore Xcode warning */ }
                         }
                     }
                 }
             }
 
-            context("when invalid data is sent") {
-                it("should return an error") {
+            context("when invalid data is returned") {
+                it("should return and log a non fatal error") {
                     stub(condition: isHost("storage.googleapis.com")) { _ in
                         .init(data: Data(), statusCode: 200, headers: nil)
                     }
 
+                    let mock = MockErrorLogging()
+                    stub(mock) { stub in
+                        stub.logNonFatal(error: any()).thenDoNothing()
+                    }
+
                     let service = PortfolioService()
+                    service.errorLogger = mock
 
                     waitUntil(timeout: .milliseconds(500)) { done in
                         service.fetch { result in
                             do {
                                 let expected = PortfolioService.ServiceError.invalidData(nil)
                                 expect(try result.get()).to(throwError(expected))
+
+                                verify(mock).logNonFatal(error: any())
+
                                 done()
-                            } catch {
-                                // XXX: ignore Xcode warning
-                            }
+                            } catch { /* XXX: ignore Xcode warning */ }
                         }
                     }
                 }
