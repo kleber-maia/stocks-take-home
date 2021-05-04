@@ -146,9 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				92EB3A9A2641A1A9003A0E4C /* Extensions */,
-				92CC80632640A3F100D19219 /* Helper */,
-				92DDE4192640876400E903CB /* Model */,
-				92CC80602640A1BD00D19219 /* Service */,
+				92CC80632640A3F100D19219 /* Helpers */,
+				92DDE4192640876400E903CB /* Models */,
+				92CC80602640A1BD00D19219 /* Services */,
 				92A789792640600100B9539C /* AppDelegate.swift */,
 				92A7897B2640600100B9539C /* SceneDelegate.swift */,
 				92A7897D2640600100B9539C /* ViewController.swift */,
@@ -182,15 +182,15 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		92CC80602640A1BD00D19219 /* Service */ = {
+		92CC80602640A1BD00D19219 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				92CC80612640A23C00D19219 /* PortfolioService.swift */,
 			);
-			path = Service;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		92CC80632640A3F100D19219 /* Helper */ = {
+		92CC80632640A3F100D19219 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				92CC80642640A41900D19219 /* ErrorLogging.swift */,
@@ -200,17 +200,17 @@
 				92EB3A9D2641A325003A0E4C /* ExtendedView.swift */,
 				9267FE222641C81C0061A823 /* ExtendedFormatter.swift */,
 			);
-			path = Helper;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
-		92DDE4192640876400E903CB /* Model */ = {
+		92DDE4192640876400E903CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				92DDE41C26408B9800E903CB /* Currency.swift */,
 				92DDE41E26408C3000E903CB /* PortfolioModel.swift */,
 				92DDE41A2640892400E903CB /* StockModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		92DDE42026408C7600E903CB /* Fixtures */ = {
