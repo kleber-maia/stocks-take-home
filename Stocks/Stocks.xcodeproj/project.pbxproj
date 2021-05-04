@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92410B452640BAC9009510C7 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 92410B442640BAC9009510C7 /* OHHTTPStubs */; };
+		92410B472640BAC9009510C7 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 92410B462640BAC9009510C7 /* OHHTTPStubsSwift */; };
 		92A7897A2640600100B9539C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789792640600100B9539C /* AppDelegate.swift */; };
 		92A7897C2640600100B9539C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7897B2640600100B9539C /* SceneDelegate.swift */; };
 		92A7897E2640600100B9539C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7897D2640600100B9539C /* ViewController.swift */; };
@@ -88,6 +90,8 @@
 				92A789B7264076FE00B9539C /* Quick in Frameworks */,
 				92A789B2264075E200B9539C /* Nimble in Frameworks */,
 				92A789BC2640796D00B9539C /* Cuckoo in Frameworks */,
+				92410B472640BAC9009510C7 /* OHHTTPStubsSwift in Frameworks */,
+				92410B452640BAC9009510C7 /* OHHTTPStubs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +231,8 @@
 				92A789B1264075E200B9539C /* Nimble */,
 				92A789B6264076FE00B9539C /* Quick */,
 				92A789BB2640796D00B9539C /* Cuckoo */,
+				92410B442640BAC9009510C7 /* OHHTTPStubs */,
+				92410B462640BAC9009510C7 /* OHHTTPStubsSwift */,
 			);
 			productName = StocksTests;
 			productReference = 92A7898C2640600200B9539C /* StocksTests.xctest */;
@@ -287,6 +293,7 @@
 				92A789B0264075E200B9539C /* XCRemoteSwiftPackageReference "Nimble" */,
 				92A789B5264076FE00B9539C /* XCRemoteSwiftPackageReference "Quick" */,
 				92A789BA2640796D00B9539C /* XCRemoteSwiftPackageReference "Cuckoo" */,
+				92410B432640BAC9009510C7 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 			);
 			productRefGroup = 92A789772640600100B9539C /* Products */;
 			projectDirPath = "";
@@ -702,6 +709,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		92410B432640BAC9009510C7 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
 		92A789AA2640749500B9539C /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa";
@@ -737,6 +752,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		92410B442640BAC9009510C7 /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92410B432640BAC9009510C7 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+		92410B462640BAC9009510C7 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92410B432640BAC9009510C7 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
 		92A789AB2640749500B9539C /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 92A789AA2640749500B9539C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
