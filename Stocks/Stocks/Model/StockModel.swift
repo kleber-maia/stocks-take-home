@@ -41,3 +41,17 @@ class StockModel: NSObject, Codable {
             currentPriceTimestamp == currentPriceTimestamp
     }
 }
+
+extension Array where Element == StockModel {
+    func owns() -> [StockModel] {
+        filter { $0.quantity ?? 0 > 0 }
+    }
+
+    func sorted() -> [StockModel] {
+        sorted { $0.name < $1.name }
+    }
+
+    func watching() -> [StockModel] {
+        filter { $0.quantity ?? 0 == 0 }
+    }
+}
