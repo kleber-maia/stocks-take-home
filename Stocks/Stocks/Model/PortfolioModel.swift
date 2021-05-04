@@ -1,7 +1,7 @@
 import Foundation
 
-/// Represents a collection of stocks in the user's portfolio and/or watch list.
-struct StocksModel: Codable {
+/// Represents the user's portfolio and/or watch list.
+struct PortfolioModel: Codable {
     let stocks: [StockModel]
 
     /// Initializes de model from the provided `jsonData`.
@@ -15,7 +15,7 @@ struct StocksModel: Codable {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
 
-        let decoded = try decoder.decode(StocksModel.self, from: jsonData)
+        let decoded = try decoder.decode(PortfolioModel.self, from: jsonData)
 
         self = decoded
     }

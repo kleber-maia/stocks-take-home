@@ -3,17 +3,17 @@ import Nimble
 import Quick
 @testable import Stocks
 
-class StocksModelSpec: QuickSpec {
+class PortfolioModelSpec: QuickSpec {
     override func spec() {
         describe("init") {
             context("when valid JSON data is provided") {
                 it("should successfully decode") {
                     let jsonData = try! Data(
-                        contentsOf: Bundle(for: StocksModelSpec.self)
+                        contentsOf: Bundle(for: PortfolioModelSpec.self)
                             .url(forResource: "stocks", withExtension: "json")!
                     )
 
-                    let model = try! StocksModel(jsonData: jsonData)
+                    let model = try! PortfolioModel(jsonData: jsonData)
 
                     expect(model.stocks).to(
                         equal(
@@ -35,11 +35,11 @@ class StocksModelSpec: QuickSpec {
             context("when valid, empty JSON data is provided") {
                 it("should successfully decode") {
                     let jsonData = try! Data(
-                        contentsOf: Bundle(for: StocksModelSpec.self)
+                        contentsOf: Bundle(for: PortfolioModelSpec.self)
                             .url(forResource: "stocks_empty", withExtension: "json")!
                     )
 
-                    let model = try! StocksModel(jsonData: jsonData)
+                    let model = try! PortfolioModel(jsonData: jsonData)
 
                     expect(model.stocks).to(equal([]))
                 }
@@ -48,11 +48,11 @@ class StocksModelSpec: QuickSpec {
             context("when malformed JSON data is provided") {
                 it("should throw an error") {
                     let jsonData = try! Data(
-                        contentsOf: Bundle(for: StocksModelSpec.self)
+                        contentsOf: Bundle(for: PortfolioModelSpec.self)
                             .url(forResource: "stocks_malformed", withExtension: "json")!
                     )
 
-                    expect(try StocksModel(jsonData: jsonData)).to(throwError())
+                    expect(try PortfolioModel(jsonData: jsonData)).to(throwError())
                 }
             }
         }

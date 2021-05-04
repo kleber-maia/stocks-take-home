@@ -8,7 +8,7 @@ class PortfolioService {
         case requestError(Error?)
     }
 
-    typealias Completion = (Result<StocksModel, Error>) -> Void
+    typealias Completion = (Result<PortfolioModel, Error>) -> Void
 
     var errorLogger: ErrorLogging = ErrorLogger.shared
 
@@ -42,7 +42,7 @@ class PortfolioService {
             }
 
             do {
-                let model = try StocksModel(jsonData: data ?? Data())
+                let model = try PortfolioModel(jsonData: data ?? Data())
                 completion(.success(model))
             } catch {
                 completion(.failure(ServiceError.invalidData(data)))
