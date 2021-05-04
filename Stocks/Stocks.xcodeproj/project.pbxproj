@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		92410B452640BAC9009510C7 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 92410B442640BAC9009510C7 /* OHHTTPStubs */; };
 		92410B472640BAC9009510C7 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 92410B462640BAC9009510C7 /* OHHTTPStubsSwift */; };
+		9267FE212641C12D0061A823 /* ExtendedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FE202641C12D0061A823 /* ExtendedSegmentedControl.swift */; };
 		9267FE232641C81C0061A823 /* ExtendedFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FE222641C81C0061A823 /* ExtendedFormatter.swift */; };
 		9267FE252641CF580061A823 /* ExtendedFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FE242641CF580061A823 /* ExtendedFormatterSpec.swift */; };
 		92A7897A2640600100B9539C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789792640600100B9539C /* AppDelegate.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9267FE202641C12D0061A823 /* ExtendedSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedSegmentedControl.swift; sourceTree = "<group>"; };
 		9267FE222641C81C0061A823 /* ExtendedFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedFormatter.swift; sourceTree = "<group>"; };
 		9267FE242641CF580061A823 /* ExtendedFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedFormatterSpec.swift; sourceTree = "<group>"; };
 		92A789762640600100B9539C /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +188,7 @@
 				92CC80642640A41900D19219 /* ErrorLogging.swift */,
 				92CC80662640A48B00D19219 /* ErrorLogger.swift */,
 				92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */,
+				9267FE202641C12D0061A823 /* ExtendedSegmentedControl.swift */,
 				9267FE222641C81C0061A823 /* ExtendedFormatter.swift */,
 			);
 			path = Helper;
@@ -393,6 +396,7 @@
 				92A7897E2640600100B9539C /* ViewController.swift in Sources */,
 				92CC80622640A23C00D19219 /* PortfolioService.swift in Sources */,
 				92A7897A2640600100B9539C /* AppDelegate.swift in Sources */,
+				9267FE212641C12D0061A823 /* ExtendedSegmentedControl.swift in Sources */,
 				9267FE232641C81C0061A823 /* ExtendedFormatter.swift in Sources */,
 				92DDE41F26408C3000E903CB /* PortfolioModel.swift in Sources */,
 				92A7897C2640600100B9539C /* SceneDelegate.swift in Sources */,
