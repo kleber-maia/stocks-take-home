@@ -1,0 +1,91 @@
+import Foundation
+import Nimble
+import Quick
+@testable import Stocks
+
+class StockModelServiceSpec: QuickSpec {
+    override func spec() {
+        describe("formatter") {
+            it("returns a formatter configured to its Currency") {
+                let model = StockModel(
+                    ticker: "", name: "", currency: .USD, currentPriceCents: 0, quantity: nil, currentPriceTimestamp: 0
+                )
+
+                let formatter = model.formatter.currencyFormatter
+
+                let expected = ExtendedFormatter(using: .USD).currencyFormatter
+
+                expect(formatter.groupingSeparator).to(equal(expected.groupingSeparator))
+                expect(formatter.decimalSeparator).to(equal(expected.decimalSeparator))
+                expect(formatter.currencySymbol).to(equal(expected.currencySymbol))
+            }
+        }
+
+        describe("isEqual") {
+            context("when compared to am equal model") {
+                it("should return true") {
+                    let baseline = StockModel(
+                        ticker: "TWTR",
+                        name: "Twitter",
+                        currency: .USD,
+                        currentPriceCents: 3833,
+                        quantity: 1,
+                        currentPriceTimestamp: 123456
+                    )
+
+                    let comparison = StockModel(
+                        ticker: "TWTR",
+                        name: "Twitter",
+                        currency: .USD,
+                        currentPriceCents: 3833,
+                        quantity: 1,
+                        currentPriceTimestamp: 123456
+                    )
+
+                    expect(baseline.isEqual(comparison)).to(beTrue())
+                }
+            }
+
+            context("when compared to a different model") {
+                it("should return false") {
+                    let baseline = StockModel(
+                        ticker: "TWTR",
+                        name: "Twitter",
+                        currency: .USD,
+                        currentPriceCents: 3833,
+                        quantity: 1,
+                        currentPriceTimestamp: 123456
+                    )
+
+                    let comparison = StockModel(
+                        ticker: "AAPL",
+                        name: "Apple",
+                        currency: .USD,
+                        currentPriceCents: 1234,
+                        quantity: 0,
+                        currentPriceTimestamp: 123456
+                    )
+
+                    expect(baseline.isEqual(comparison)).toNot(beTrue())
+                }
+            }
+
+            context("when compared to another type") {
+                it("should return false") {
+                    let baseline = StockModel(
+                        ticker: "TWTR",
+                        name: "Twitter",
+                        currency: .USD,
+                        currentPriceCents: 3833,
+                        quantity: 1,
+                        currentPriceTimestamp: 123456
+                    )
+
+                    let comparison = [StockModel]()
+
+                    expect(baseline.isEqual(comparison)).toNot(beTrue())
+                }
+            }
+        }
+    }
+}

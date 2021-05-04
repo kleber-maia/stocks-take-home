@@ -12,6 +12,7 @@
 		9267FE212641C12D0061A823 /* ExtendedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FE202641C12D0061A823 /* ExtendedSegmentedControl.swift */; };
 		9267FE232641C81C0061A823 /* ExtendedFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FE222641C81C0061A823 /* ExtendedFormatter.swift */; };
 		9267FE252641CF580061A823 /* ExtendedFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FE242641CF580061A823 /* ExtendedFormatterSpec.swift */; };
+		928DEC352641F135000412E8 /* StockModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DEC342641F135000412E8 /* StockModelSpec.swift */; };
 		92A7897A2640600100B9539C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789792640600100B9539C /* AppDelegate.swift */; };
 		92A7897C2640600100B9539C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7897B2640600100B9539C /* SceneDelegate.swift */; };
 		92A7897E2640600100B9539C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7897D2640600100B9539C /* ViewController.swift */; };
@@ -61,6 +62,7 @@
 		9267FE202641C12D0061A823 /* ExtendedSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedSegmentedControl.swift; sourceTree = "<group>"; };
 		9267FE222641C81C0061A823 /* ExtendedFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedFormatter.swift; sourceTree = "<group>"; };
 		9267FE242641CF580061A823 /* ExtendedFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedFormatterSpec.swift; sourceTree = "<group>"; };
+		928DEC342641F135000412E8 /* StockModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockModelSpec.swift; sourceTree = "<group>"; };
 		92A789762640600100B9539C /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A789792640600100B9539C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A7897B2640600100B9539C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				9267FE242641CF580061A823 /* ExtendedFormatterSpec.swift */,
 				92CC806D2640B7F200D19219 /* PortfolioServiceSpec.swift */,
 				92A789B32640760600B9539C /* PortfolioModelSpec.swift */,
+				928DEC342641F135000412E8 /* StockModelSpec.swift */,
 				92A789922640600200B9539C /* Info.plist */,
 			);
 			path = StocksTests;
@@ -423,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928DEC352641F135000412E8 /* StockModelSpec.swift in Sources */,
 				92CC806E2640B7F200D19219 /* PortfolioServiceSpec.swift in Sources */,
 				9267FE252641CF580061A823 /* ExtendedFormatterSpec.swift in Sources */,
 				92EB3A9226418C5D003A0E4C /* GeneratedMocks.swift in Sources */,

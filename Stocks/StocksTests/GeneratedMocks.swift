@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Stocks/Helper/ErrorLogging.swift at 2021-05-04 14:16:43 +0000
+// MARK: - Mocks generated from file: Stocks/Helper/ErrorLogging.swift at 2021-05-04 21:40:51 +0000
 
 
 import Cuckoo

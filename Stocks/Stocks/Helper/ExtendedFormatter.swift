@@ -10,6 +10,15 @@ class ExtendedFormatter {
         currencyFormatter.locale = Locale.current
     }
 
+    /// Configures the currency formatter to match the given `currency` properties.
+    convenience init(using currency: Currency) {
+        self.init()
+
+        currencyFormatter.currencySymbol = currency.symbol
+        currencyFormatter.groupingSeparator = currency.groupingSeparator
+        currencyFormatter.decimalSeparator = currency.decimalSeparator
+    }
+
     /**
      Formats the given `value` using the current locale currency format.
      */

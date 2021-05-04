@@ -9,6 +9,11 @@ class StockModel: NSObject, Codable {
     let quantity: Int?
     let currentPriceTimestamp: TimeInterval
 
+    var formattedCurrentPrice: String? {
+        formatter.asCurrency(Double(currentPriceCents) / 100.0)
+    }
+    lazy var formatter = ExtendedFormatter(using: self.currency)
+
     init(
         ticker: String,
         name: String,
