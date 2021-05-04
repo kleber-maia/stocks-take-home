@@ -34,6 +34,7 @@
 		92DDE42426408D2C00E903CB /* stocks_malformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 92DDE42326408D2C00E903CB /* stocks_malformed.json */; };
 		92DDE42626408D4800E903CB /* stocks_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 92DDE42526408D4800E903CB /* stocks_empty.json */; };
 		92EB3A9226418C5D003A0E4C /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */; };
+		92EB3A992641A05D003A0E4C /* ExtendedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		92DDE42326408D2C00E903CB /* stocks_malformed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stocks_malformed.json; sourceTree = "<group>"; };
 		92DDE42526408D4800E903CB /* stocks_empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stocks_empty.json; sourceTree = "<group>"; };
 		92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneratedMocks.swift; path = StocksTests/GeneratedMocks.swift; sourceTree = SOURCE_ROOT; };
+		92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			children = (
 				92CC80642640A41900D19219 /* ErrorLogging.swift */,
 				92CC80662640A48B00D19219 /* ErrorLogger.swift */,
+				92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */,
 				9267FE222641C81C0061A823 /* ExtendedFormatter.swift */,
 			);
 			path = Helper;
@@ -382,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92EB3A992641A05D003A0E4C /* ExtendedLabel.swift in Sources */,
 				92CC80672640A48B00D19219 /* ErrorLogger.swift in Sources */,
 				92DDE41B2640892400E903CB /* StockModel.swift in Sources */,
 				92DDE41D26408B9800E903CB /* Currency.swift in Sources */,
