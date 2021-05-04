@@ -36,6 +36,7 @@
 		92DDE42626408D4800E903CB /* stocks_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 92DDE42526408D4800E903CB /* stocks_empty.json */; };
 		92EB3A9226418C5D003A0E4C /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */; };
 		92EB3A992641A05D003A0E4C /* ExtendedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */; };
+		92EB3A9C2641A1B6003A0E4C /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A9B2641A1B6003A0E4C /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		92DDE42526408D4800E903CB /* stocks_empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stocks_empty.json; sourceTree = "<group>"; };
 		92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneratedMocks.swift; path = StocksTests/GeneratedMocks.swift; sourceTree = SOURCE_ROOT; };
 		92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedLabel.swift; sourceTree = "<group>"; };
+		92EB3A9B2641A1B6003A0E4C /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		92A789782640600100B9539C /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				92EB3A9A2641A1A9003A0E4C /* Extensions */,
 				92CC80632640A3F100D19219 /* Helper */,
 				92DDE4192640876400E903CB /* Model */,
 				92CC80602640A1BD00D19219 /* Service */,
@@ -212,6 +215,14 @@
 				92DDE42326408D2C00E903CB /* stocks_malformed.json */,
 			);
 			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		92EB3A9A2641A1A9003A0E4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92EB3A9B2641A1B6003A0E4C /* String+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +404,7 @@
 				92DDE41B2640892400E903CB /* StockModel.swift in Sources */,
 				92DDE41D26408B9800E903CB /* Currency.swift in Sources */,
 				92CC80652640A41900D19219 /* ErrorLogging.swift in Sources */,
+				92EB3A9C2641A1B6003A0E4C /* String+Ext.swift in Sources */,
 				92A7897E2640600100B9539C /* ViewController.swift in Sources */,
 				92CC80622640A23C00D19219 /* PortfolioService.swift in Sources */,
 				92A7897A2640600100B9539C /* AppDelegate.swift in Sources */,
