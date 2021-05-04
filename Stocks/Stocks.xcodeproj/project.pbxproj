@@ -37,6 +37,7 @@
 		92EB3A9226418C5D003A0E4C /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */; };
 		92EB3A992641A05D003A0E4C /* ExtendedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */; };
 		92EB3A9C2641A1B6003A0E4C /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A9B2641A1B6003A0E4C /* String+Ext.swift */; };
+		92EB3A9E2641A325003A0E4C /* ExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A9D2641A325003A0E4C /* ExtendedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneratedMocks.swift; path = StocksTests/GeneratedMocks.swift; sourceTree = SOURCE_ROOT; };
 		92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedLabel.swift; sourceTree = "<group>"; };
 		92EB3A9B2641A1B6003A0E4C /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		92EB3A9D2641A325003A0E4C /* ExtendedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				92CC80662640A48B00D19219 /* ErrorLogger.swift */,
 				92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */,
 				9267FE202641C12D0061A823 /* ExtendedSegmentedControl.swift */,
+				92EB3A9D2641A325003A0E4C /* ExtendedView.swift */,
 				9267FE222641C81C0061A823 /* ExtendedFormatter.swift */,
 			);
 			path = Helper;
@@ -408,6 +411,7 @@
 				92A7897E2640600100B9539C /* ViewController.swift in Sources */,
 				92CC80622640A23C00D19219 /* PortfolioService.swift in Sources */,
 				92A7897A2640600100B9539C /* AppDelegate.swift in Sources */,
+				92EB3A9E2641A325003A0E4C /* ExtendedView.swift in Sources */,
 				9267FE212641C12D0061A823 /* ExtendedSegmentedControl.swift in Sources */,
 				9267FE232641C81C0061A823 /* ExtendedFormatter.swift in Sources */,
 				92DDE41F26408C3000E903CB /* PortfolioModel.swift in Sources */,
