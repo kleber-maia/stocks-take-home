@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922A3E7626459BD900BDD4A6 /* PortfolioViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A3E7526459BD900BDD4A6 /* PortfolioViewModelSpec.swift */; };
+		922C2B502643561C0037464D /* PortfolioViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C2B4F2643561C0037464D /* PortfolioViewModelDelegate.swift */; };
 		92410B452640BAC9009510C7 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 92410B442640BAC9009510C7 /* OHHTTPStubs */; };
 		92410B472640BAC9009510C7 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 92410B462640BAC9009510C7 /* OHHTTPStubsSwift */; };
 		9267FE212641C12D0061A823 /* ExtendedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267FE202641C12D0061A823 /* ExtendedSegmentedControl.swift */; };
@@ -15,8 +17,8 @@
 		928DEC352641F135000412E8 /* StockModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DEC342641F135000412E8 /* StockModelSpec.swift */; };
 		92A7897A2640600100B9539C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A789792640600100B9539C /* AppDelegate.swift */; };
 		92A7897C2640600100B9539C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7897B2640600100B9539C /* SceneDelegate.swift */; };
-		92A7897E2640600100B9539C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7897D2640600100B9539C /* ViewController.swift */; };
-		92A789812640600100B9539C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A7897F2640600100B9539C /* Main.storyboard */; };
+		92A7897E2640600100B9539C /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7897D2640600100B9539C /* PortfolioViewController.swift */; };
+		92A789812640600100B9539C /* Portfolio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A7897F2640600100B9539C /* Portfolio.storyboard */; };
 		92A789832640600200B9539C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A789822640600200B9539C /* Assets.xcassets */; };
 		92A789862640600200B9539C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A789842640600200B9539C /* LaunchScreen.storyboard */; };
 		92A789AC2640749500B9539C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 92A789AB2640749500B9539C /* Realm */; };
@@ -30,12 +32,15 @@
 		92CC80652640A41900D19219 /* ErrorLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC80642640A41900D19219 /* ErrorLogging.swift */; };
 		92CC80672640A48B00D19219 /* ErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC80662640A48B00D19219 /* ErrorLogger.swift */; };
 		92CC806E2640B7F200D19219 /* PortfolioServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC806D2640B7F200D19219 /* PortfolioServiceSpec.swift */; };
+		92CCD8C92643089700242E33 /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CCD8C82643089700242E33 /* PortfolioViewModel.swift */; };
 		92DDE41B2640892400E903CB /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDE41A2640892400E903CB /* StockModel.swift */; };
 		92DDE41D26408B9800E903CB /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDE41C26408B9800E903CB /* Currency.swift */; };
 		92DDE41F26408C3000E903CB /* PortfolioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDE41E26408C3000E903CB /* PortfolioModel.swift */; };
 		92DDE42426408D2C00E903CB /* stocks_malformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 92DDE42326408D2C00E903CB /* stocks_malformed.json */; };
 		92DDE42626408D4800E903CB /* stocks_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 92DDE42526408D4800E903CB /* stocks_empty.json */; };
+		92EB3A9026418540003A0E4C /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A8F26418540003A0E4C /* StockCell.swift */; };
 		92EB3A9226418C5D003A0E4C /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */; };
+		92EB3A95264196C6003A0E4C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92EB3A97264196C6003A0E4C /* Localizable.strings */; };
 		92EB3A992641A05D003A0E4C /* ExtendedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */; };
 		92EB3A9C2641A1B6003A0E4C /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A9B2641A1B6003A0E4C /* String+Ext.swift */; };
 		92EB3A9E2641A325003A0E4C /* ExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EB3A9D2641A325003A0E4C /* ExtendedView.swift */; };
@@ -59,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		922A3E7526459BD900BDD4A6 /* PortfolioViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewModelSpec.swift; sourceTree = "<group>"; };
+		922C2B4F2643561C0037464D /* PortfolioViewModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewModelDelegate.swift; sourceTree = "<group>"; };
 		9267FE202641C12D0061A823 /* ExtendedSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedSegmentedControl.swift; sourceTree = "<group>"; };
 		9267FE222641C81C0061A823 /* ExtendedFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedFormatter.swift; sourceTree = "<group>"; };
 		9267FE242641CF580061A823 /* ExtendedFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedFormatterSpec.swift; sourceTree = "<group>"; };
@@ -66,8 +73,8 @@
 		92A789762640600100B9539C /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A789792640600100B9539C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A7897B2640600100B9539C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92A7897D2640600100B9539C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92A789802640600100B9539C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92A7897D2640600100B9539C /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		92A789802640600100B9539C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Portfolio.storyboard; sourceTree = "<group>"; };
 		92A789822640600200B9539C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92A789852640600200B9539C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92A789872640600200B9539C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,13 +86,16 @@
 		92CC80642640A41900D19219 /* ErrorLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogging.swift; sourceTree = "<group>"; };
 		92CC80662640A48B00D19219 /* ErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogger.swift; sourceTree = "<group>"; };
 		92CC806D2640B7F200D19219 /* PortfolioServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioServiceSpec.swift; sourceTree = "<group>"; };
+		92CCD8C82643089700242E33 /* PortfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
 		92DDE41A2640892400E903CB /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		92DDE41C26408B9800E903CB /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		92DDE41E26408C3000E903CB /* PortfolioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioModel.swift; sourceTree = "<group>"; };
 		92DDE42226408CCA00E903CB /* stocks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stocks.json; sourceTree = "<group>"; };
 		92DDE42326408D2C00E903CB /* stocks_malformed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stocks_malformed.json; sourceTree = "<group>"; };
 		92DDE42526408D4800E903CB /* stocks_empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stocks_empty.json; sourceTree = "<group>"; };
+		92EB3A8F26418540003A0E4C /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
 		92EB3A9126418C5C003A0E4C /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneratedMocks.swift; path = StocksTests/GeneratedMocks.swift; sourceTree = SOURCE_ROOT; };
+		92EB3A96264196C6003A0E4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		92EB3A982641A05D003A0E4C /* ExtendedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedLabel.swift; sourceTree = "<group>"; };
 		92EB3A9B2641A1B6003A0E4C /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		92EB3A9D2641A325003A0E4C /* ExtendedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedView.swift; sourceTree = "<group>"; };
@@ -149,12 +159,13 @@
 				92CC80632640A3F100D19219 /* Helpers */,
 				92DDE4192640876400E903CB /* Models */,
 				92CC80602640A1BD00D19219 /* Services */,
+				92CCD8C72643088100242E33 /* ViewModels */,
+				92CCD88C2642EA0300242E33 /* Views */,
 				92A789792640600100B9539C /* AppDelegate.swift */,
 				92A7897B2640600100B9539C /* SceneDelegate.swift */,
-				92A7897D2640600100B9539C /* ViewController.swift */,
-				92A7897F2640600100B9539C /* Main.storyboard */,
 				92A789822640600200B9539C /* Assets.xcassets */,
 				92A789842640600200B9539C /* LaunchScreen.storyboard */,
+				92EB3A97264196C6003A0E4C /* Localizable.strings */,
 				92A789872640600200B9539C /* Info.plist */,
 			);
 			path = Stocks;
@@ -166,6 +177,7 @@
 				92DDE42026408C7600E903CB /* Fixtures */,
 				92A789C226407E3B00B9539C /* Mocks */,
 				9267FE242641CF580061A823 /* ExtendedFormatterSpec.swift */,
+				922A3E7526459BD900BDD4A6 /* PortfolioViewModelSpec.swift */,
 				92CC806D2640B7F200D19219 /* PortfolioServiceSpec.swift */,
 				92A789B32640760600B9539C /* PortfolioModelSpec.swift */,
 				928DEC342641F135000412E8 /* StockModelSpec.swift */,
@@ -201,6 +213,25 @@
 				9267FE222641C81C0061A823 /* ExtendedFormatter.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		92CCD88C2642EA0300242E33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92EB3A8F26418540003A0E4C /* StockCell.swift */,
+				92A7897D2640600100B9539C /* PortfolioViewController.swift */,
+				92A7897F2640600100B9539C /* Portfolio.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92CCD8C72643088100242E33 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				92CCD8C82643089700242E33 /* PortfolioViewModel.swift */,
+				922C2B4F2643561C0037464D /* PortfolioViewModelDelegate.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		92DDE4192640876400E903CB /* Models */ = {
@@ -355,8 +386,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A789862640600200B9539C /* LaunchScreen.storyboard in Resources */,
+				92EB3A95264196C6003A0E4C /* Localizable.strings in Resources */,
 				92A789832640600200B9539C /* Assets.xcassets in Resources */,
-				92A789812640600100B9539C /* Main.storyboard in Resources */,
+				92A789812640600100B9539C /* Portfolio.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +428,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PROJECT_DIR}/run\" --download generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Helper/ErrorLogging.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PROJECT_DIR}/run\" --download generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Helpers/ErrorLogging.swift\" \\\n\"${INPUT_DIR}/Services/PortfolioService.swift\" \\\n\"${INPUT_DIR}/ViewModels/PortfolioViewModelDelegate.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -410,13 +442,16 @@
 				92DDE41B2640892400E903CB /* StockModel.swift in Sources */,
 				92DDE41D26408B9800E903CB /* Currency.swift in Sources */,
 				92CC80652640A41900D19219 /* ErrorLogging.swift in Sources */,
+				922C2B502643561C0037464D /* PortfolioViewModelDelegate.swift in Sources */,
+				92EB3A9026418540003A0E4C /* StockCell.swift in Sources */,
 				92EB3A9C2641A1B6003A0E4C /* String+Ext.swift in Sources */,
-				92A7897E2640600100B9539C /* ViewController.swift in Sources */,
+				92A7897E2640600100B9539C /* PortfolioViewController.swift in Sources */,
 				92CC80622640A23C00D19219 /* PortfolioService.swift in Sources */,
 				92A7897A2640600100B9539C /* AppDelegate.swift in Sources */,
 				92EB3A9E2641A325003A0E4C /* ExtendedView.swift in Sources */,
 				9267FE212641C12D0061A823 /* ExtendedSegmentedControl.swift in Sources */,
 				9267FE232641C81C0061A823 /* ExtendedFormatter.swift in Sources */,
+				92CCD8C92643089700242E33 /* PortfolioViewModel.swift in Sources */,
 				92DDE41F26408C3000E903CB /* PortfolioModel.swift in Sources */,
 				92A7897C2640600100B9539C /* SceneDelegate.swift in Sources */,
 			);
@@ -428,6 +463,7 @@
 			files = (
 				928DEC352641F135000412E8 /* StockModelSpec.swift in Sources */,
 				92CC806E2640B7F200D19219 /* PortfolioServiceSpec.swift in Sources */,
+				922A3E7626459BD900BDD4A6 /* PortfolioViewModelSpec.swift in Sources */,
 				9267FE252641CF580061A823 /* ExtendedFormatterSpec.swift in Sources */,
 				92EB3A9226418C5D003A0E4C /* GeneratedMocks.swift in Sources */,
 				92A789B42640760600B9539C /* PortfolioModelSpec.swift in Sources */,
@@ -457,12 +493,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		92A7897F2640600100B9539C /* Main.storyboard */ = {
+		92A7897F2640600100B9539C /* Portfolio.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				92A789802640600100B9539C /* Base */,
 			);
-			name = Main.storyboard;
+			name = Portfolio.storyboard;
 			sourceTree = "<group>";
 		};
 		92A789842640600200B9539C /* LaunchScreen.storyboard */ = {
@@ -471,6 +507,14 @@
 				92A789852640600200B9539C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		92EB3A97264196C6003A0E4C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92EB3A96264196C6003A0E4C /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -597,8 +641,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MFR55Y483L;
+				DEVELOPMENT_TEAM = JN736S572P;
 				INFOPLIST_FILE = Stocks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -607,8 +652,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.klebermaia.Stocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -617,8 +663,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MFR55Y483L;
+				DEVELOPMENT_TEAM = JN736S572P;
 				INFOPLIST_FILE = Stocks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -627,8 +674,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.klebermaia.Stocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

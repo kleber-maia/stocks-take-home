@@ -1,0 +1,20 @@
+
+"stock_cell_invalid_data" = "Invalid data, please pull down to refresh.";
+
+"stock_cell_cell_not_found" = "Something went wrong, please file a bug report.";
+
+"portfolio_view_my_portfolio" = "My Portfolio";
+
+"portfolio_view_watch_list" = "Watch List";
+
+"portfolio_view_all" = "All";
+
+"portfolio_title" = "Stocks";
+
+"portfolio_error_title" = "Error Loading Portfolio";
+
+"portfolio_error_message" = "Please check your internet connection and try again.";
+
+"general_cancel" = "Cancel";
+
+"general_retry" = "Retry";

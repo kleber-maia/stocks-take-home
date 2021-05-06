@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TAe-jj-eIM">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stocks-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Stocks" id="BYZ-38-t0r" customClass="PortfolioViewController" customModule="Stocks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="amA-G8-HDL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StockCell" id="LsD-Nm-AvV" customClass="StockCell" customModule="Stocks" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="49.5" width="374" height="69.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LsD-Nm-AvV" id="QCO-fx-21l">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="03J-SK-zKU">
+                                                    <rect key="frame" x="8" y="8" width="358" height="53.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7X-6c-6dY" customClass="ExtendedView" customModule="Stocks" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.5" width="53" height="52.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dT5-a2-JrM">
+                                                                    <rect key="frame" x="4" y="4" width="45" height="44.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="dT5-a2-JrM" secondAttribute="height" multiplier="1:1" id="ejf-BE-E7L"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="dT5-a2-JrM" firstAttribute="top" secondItem="o7X-6c-6dY" secondAttribute="top" constant="4" id="DbF-0l-wft"/>
+                                                                <constraint firstItem="dT5-a2-JrM" firstAttribute="leading" secondItem="o7X-6c-6dY" secondAttribute="leading" constant="4" id="Net-ZI-UIs"/>
+                                                                <constraint firstAttribute="trailing" secondItem="dT5-a2-JrM" secondAttribute="trailing" constant="4" id="tXY-sv-OaS"/>
+                                                                <constraint firstAttribute="bottom" secondItem="dT5-a2-JrM" secondAttribute="bottom" constant="4" id="xT8-Rx-sqf"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="otR-NT-zOX">
+                                                            <rect key="frame" x="61" y="6" width="183.5" height="41.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Stock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0B-s8-EnZ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="183.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPk-mg-6al" userLabel="Quantity">
+                                                                    <rect key="frame" x="0.0" y="24.5" width="183.5" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxe-4S-2AR" customClass="ExtendedView" customModule="Stocks" customModuleProvider="target">
+                                                            <rect key="frame" x="252.5" y="2" width="105.5" height="50"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wQy-vu-hGp">
+                                                                    <rect key="frame" x="8" y="8" width="89.5" height="34"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                            <constraints>
+                                                                <constraint firstItem="wQy-vu-hGp" firstAttribute="top" secondItem="mxe-4S-2AR" secondAttribute="top" constant="8" id="73n-W9-o1M"/>
+                                                                <constraint firstAttribute="trailing" secondItem="wQy-vu-hGp" secondAttribute="trailing" constant="8" id="CtR-fX-Afw"/>
+                                                                <constraint firstAttribute="bottom" secondItem="wQy-vu-hGp" secondAttribute="bottom" constant="8" id="DAX-sr-xi4"/>
+                                                                <constraint firstItem="wQy-vu-hGp" firstAttribute="leading" secondItem="mxe-4S-2AR" secondAttribute="leading" constant="8" id="jwF-TP-nXO"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="wQy-vu-hGp" firstAttribute="width" secondItem="03J-SK-zKU" secondAttribute="width" multiplier="0.25" id="4JO-TY-vFD"/>
+                                                        <constraint firstItem="dT5-a2-JrM" firstAttribute="width" secondItem="03J-SK-zKU" secondAttribute="width" multiplier="0.125" id="8CE-eW-pgf"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="03J-SK-zKU" secondAttribute="trailing" constant="8" id="202-BL-ZaI"/>
+                                                <constraint firstAttribute="bottom" secondItem="03J-SK-zKU" secondAttribute="bottom" constant="8" id="3Lf-wJ-I40"/>
+                                                <constraint firstItem="03J-SK-zKU" firstAttribute="leading" secondItem="QCO-fx-21l" secondAttribute="leading" constant="8" id="9eT-gp-Tjr"/>
+                                                <constraint firstItem="03J-SK-zKU" firstAttribute="top" secondItem="QCO-fx-21l" secondAttribute="top" constant="8" id="T97-kk-SC8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="g0B-s8-EnZ" id="LqQ-SU-4IR"/>
+                                            <outlet property="priceLabel" destination="wQy-vu-hGp" id="5T3-rx-3yN"/>
+                                            <outlet property="quantityLabel" destination="LPk-mg-6al" id="tf8-Yp-nbO"/>
+                                            <outlet property="tickerLabel" destination="dT5-a2-JrM" id="ORB-vl-aOi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InvalidDataCell" textLabel="60F-p2-d8m" rowHeight="64" style="IBUITableViewCellStyleDefault" id="bcY-QS-0nd">
+                                        <rect key="frame" x="20" y="119" width="374" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bcY-QS-0nd" id="3G0-q1-FXJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="stock_cell_invalid_data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" id="60F-p2-d8m" customClass="ExtendedLabel" customModule="Stocks" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="0.0" width="334" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellNotFoundCell" textLabel="eGo-0n-wdA" rowHeight="64" style="IBUITableViewCellStyleDefault" id="Iy9-pv-9WK">
+                                        <rect key="frame" x="20" y="183" width="374" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iy9-pv-9WK" id="n7Q-A3-tlr">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="stock_cell_cell_not_found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" id="eGo-0n-wdA" customClass="ExtendedLabel" customModule="Stocks" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="0.0" width="334" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="V8d-9O-f31"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="41f-y9-r6v" customClass="ExtendedSegmentedControl" customModule="Stocks" customModuleProvider="target">
+                                <rect key="frame" x="20" y="750" width="374" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="portfolio_view_my_portfolio"/>
+                                    <segment title="portfolio_view_watch_list"/>
+                                    <segment title="portfolio_view_all"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemGreenColor"/>
+                                <connections>
+                                    <action selector="segmentedControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="q3e-J8-3F6"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="amA-G8-HDL" secondAttribute="trailing" id="6ly-er-oEa"/>
+                            <constraint firstItem="amA-G8-HDL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kw9-l7-aFU"/>
+                            <constraint firstItem="amA-G8-HDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OqJ-Xh-IpD"/>
+                            <constraint firstAttribute="bottom" secondItem="amA-G8-HDL" secondAttribute="bottom" id="RRN-2B-vCf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eGa-7s-5Jq"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="41f-y9-r6v" id="1dg-b2-x3U"/>
+                        <outlet property="tableView" destination="amA-G8-HDL" id="8sG-nP-osU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </scene>
+        <!--Stocks-->
+        <scene sceneID="ES6-X0-xKu">
+            <objects>
+                <navigationController title="Stocks" id="TAe-jj-eIM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="kFq-Od-6SH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VRV-gB-qnC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97G-8w-oYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-684" y="136"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="41f-y9-r6v">
+            <size key="intrinsicContentSize" width="578" height="31"/>
+        </designable>
+        <designable name="60F-p2-d8m">
+            <size key="intrinsicContentSize" width="177" height="20.5"/>
+        </designable>
+        <designable name="eGo-0n-wdA">
+            <size key="intrinsicContentSize" width="199.5" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
