@@ -6,13 +6,16 @@ class PortfolioViewModel {
         case myPortfolio, watchList, all
     }
 
+    /// Delegate to be notified upon data events.
     weak var delegate: PortfolioViewModelDelegate?
+    /// Filter to be applied on the stocks model.
     var filter: Filter = .myPortfolio {
         didSet {
             updateFilteredStocks()
         }
     }
-    var filteredStocks = [StockModel]()
+    /// Holds a filtered, sorted stocks model for faster access.
+    private(set) var filteredStocks = [StockModel]()
 
     private var portfolioModel: PortfolioModel?
     private var portfolioService: PortfolioService
@@ -33,17 +36,19 @@ class PortfolioViewModel {
         delegate?.willLoadModel()
 
         portfolioService.fetch { [weak self] result in
-            DispatchQueue.main.async {
-                guard let self = self else { return }
+            guard let self = self else { return }
 
-                switch result {
-                case .success(let portfolioModel):
-                    self.portfolioModel = portfolioModel
+            switch result {
+            case .success(let portfolioModel):
+                self.portfolioModel = portfolioModel
 
-                    self.updateFilteredStocks()
+                self.updateFilteredStocks()
 
+                DispatchQueue.main.async {
                     self.delegate?.didLoadModel()
-                case .failure(_):
+                }
+            case .failure(_):
+                DispatchQueue.main.async {
                     self.delegate?.didEncounterError()
                 }
             }
