@@ -1,5 +1,8 @@
 # Stocks App / Take Home
 
+| ![Simulator Screenshot - iPhone 15 Pro - 2023-10-09 at 09 55 42](https://github.com/kleber-maia/stocks-take-home/assets/10270929/2e38813b-75bc-415b-a791-cbf9cc77a849) | ![Simulator Screenshot - iPhone 15 Pro - 2023-10-09 at 09 55 57](https://github.com/kleber-maia/stocks-take-home/assets/10270929/25369257-8ec9-4fec-9a96-4e90343426b1) |
+| - | - |
+
 ### The architectural approach I took and why.
 I chose MVVM as main architectural design, together with single-responsibility and dependency injection principles.
 
